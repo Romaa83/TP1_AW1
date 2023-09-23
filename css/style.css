@@ -55,9 +55,19 @@ main{
     padding: 10px;
 }
 
-.menu__categoria{
-    width: 100%;
+.Monitores img{
+    border-radius: 5%;
+    box-shadow: 4px 4px 10px #202020 
 }
+.Perifericos img{
+    border-radius: 5%;
+    box-shadow: 4px 4px 10px #202020 
+}
+.Hardware img{
+    border-radius: 5%;
+    box-shadow: 4px 4px 10px #202020 
+}
+
 
 .Categorias h3{
     text-align: center;
