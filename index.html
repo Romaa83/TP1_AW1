@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Inicio</title>
 </head>
 <body>
     <header class="Header">
-        <h1>Logo</h1>       
+        <a href="./index.html"><img class ="Logo" src="./imagenes/bomba.png" alt="Logo" width="120" height="120"> </a>    
         <nav class="Links">
             <li> <a href="index.html">INICIO</a></li>
             <li><a href="Catalogo.html">CATALOGO</a></li>
@@ -17,35 +17,49 @@
         </section>
     </header>
     <main>
-        <img src="./imagenes/FondoHome.jpg" alt="FondoHome">
-        <h2>EL MEJOR ASESORAMIENTO Y LOS MEJORES PRECIOS, EN UN SOLO LUGAR.</h2>
-        <p>LAS MEJORES MARCAS
-            AL MEJOR PRECIO
-            DE LA MANO DE QUIENES MAS SABEN
-        </p><br>
-        <p>ENVÍOS A TODO EL PAÍS</p>
-        <p>EXPERTOS EN GAMING</p>
-        <p>SOPORTE POR WHATSAPP 24/7</p>
-            <h2>Categorias Destacadas</h2>
+        <img class="Imagen__fondo" src="./imagenes/home-slider-e.png" alt="FondoHome">
+        <div class="Texto">
+            <h2 class="Titulo1">EL MEJOR ASESORAMIENTO Y LOS MEJORES PRECIOS, EN UN SOLO LUGAR.</h2>
+            <p class="Parrafo1">LAS MEJORES MARCAS
+                AL MEJOR PRECIO
+                DE LA MANO DE QUIENES MAS SABEN
+            </p>
+        </div>
+        <section class="texto__separado">
+            <p>ENVÍOS A TODO EL PAÍS</p>
+            <p>EXPERTOS EN GAMING</p>
+            <p>SOPORTE POR WHATSAPP 24/7</p>
+        </section>
+            <h2 class="Texto__Categoria">Categorias Destacadas</h2>
             <section class="Categorias">
-                <h3>Perifericos</h3>
-                <a href="./Catalogo.html"><img src="./imagenes/Perifericos.jpg" alt="Perifericos" width="400" height="300"></a>
-                <h3>Hardware</h3>
-                <a href="./Catalogo.html"><img src="./imagenes/hardware.jpg" alt="Hardware" width="400" height="300"></a>
-                <h3>Monitores</h3>
-                <a href="./Catalogo.html"><img src="./imagenes/Monitores.jpg" alt="Monitores" width="400" height="300"></a>
-            </section>
+                <div class="Perifericos">
+                    <h3>Perifericos</h3>
+                    <a href="./Catalogo.html"><img src="./imagenes/Perifericos.jpg" alt="Perifericos" width="400" height="300"></a>
+                </div>
+                <div class="Hardware">
+                    <h3>Hardware</h3>
+                    <a href="./Catalogo.html"><img src="./imagenes/hardware.jpg" alt="Hardware" width="400" height="300"></a>
+                </div>
+                <div class="Monitores">
+                    <h3>Monitores</h3>
+                    <a href="./Catalogo.html"><img src="./imagenes/Monitores.jpg" alt="Monitores" width="400" height="300"></a>
+                </div>
+            </section>  
     </main>
     <footer>
-        <h3>Titulo</h3>
-        <p>Lo último en tecnología al mejor precio. Somos gamers obsesionados con su empresa de hardware: 
-            encontranos online 24/7 para la mejor atención personalizada. 
-            Marcas selectas, armados prolijos y con mucho rgb, servicio posventa y comunicación constante.
-        </p>
-        <h3>Informacion</h3>
+        <section class="Primera_Parte">
+            <h3>Titulo</h3>
+            <p>Lo último en tecnología al mejor precio. Somos gamers obsesionados con su empresa de hardware: 
+                encontranos online 24/7 para la mejor atención personalizada. 
+                Marcas selectas, armados prolijos y con mucho rgb, servicio posventa y comunicación constante.
+            </p>
+        </section>
+        <section class="Segunda_Parte">
+            <h3>Informacion</h3>
         <p>Cordoba, Argentina.</p>
         <p>+54 9 351 513-9059</p>
         <p>Horarios: Lunes a Viernes de 15 a 19hs</p>
+        </section>
     </footer>
 </body>
 </html>

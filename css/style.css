@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #3b3b3b;
+    width: 100%;
+}
+
+header{
+    font-size: 20px;
+    display: flex;
+    padding-inline: 5%;
+    padding: 2%;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%;
+    background-color: #313131;
+}
+
+.Links{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.Texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.Texto__Categoria{
+    width: 95%;
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.Categorias{
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.Categorias h3{
+    padding: 10px;
+    color: aliceblue;
+}
+
+.Titulo1{
+    font-size: 30px;
+    padding: 30px;
+    color: aliceblue;
+}
+.Parrafo1{
+    font-size: 20px;
+    padding: 10px;
+    color: aliceblue;
+}
+.texto__separado{
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.Imagen__fondo{
+    border: none;
+    outline: none;
+}
+a{
+    text-decoration: 0;
+    color: aliceblue;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #313131;
+}
+
+.Primera_Parte{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding-inline: 10%;
+    color: aliceblue;
+}
+
+.Primera_Parte h3{
+    text-align: center;
+    padding: 5px;
+    color: aliceblue;
+}
+
+.Segunda_Parte{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding-inline: 10%;
+    color: aliceblue;
+}
+
+.Segunda_Parte h3{
+    color: aliceblue;
+    text-align: center;
+    padding: 5px;
+}
