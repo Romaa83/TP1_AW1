@@ -160,6 +160,12 @@ footer{
         align-items: center;
         width: 100%;
     }
+
+    .Logo{
+        padding-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
     .texto__separado{
         display: flex;
         flex-direction: column;
