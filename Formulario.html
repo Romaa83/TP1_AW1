@@ -16,18 +16,36 @@
         </nav>
     </header>
     <main>
+        <img class="fondo_formulario" src="./imagenes/fondo_formulario.png" alt="fondo">
         <section class="Texto__Formulario">
             <h2 class="TItulo__Formulario"> CONTACTATE CON NOSOTROS</h2>
             <p class="Parrafo__Formulario">Contactese con nosotros hoy, para una consulta gratis y sin compromiso.</p>
             <p class="Parrafo__Formulario2">Estamos aquí para ayudarte con todas tus consultas y necesidades. 
                 Nuestro equipo de expertos está listo para brindarte la mejor asesoría y soluciones personalizadas.</p>
         </section>
-        <form id="form" action="./Formulario.html" method="post">
-            <label for="Nombre">Nombre:</label> <input type="text" placeholder="Nombre"><br><br>
-            <label for="Correo Electronico">Correo Electronico:</label> <input type="text" placeholder="Email"><br><br>
-            <label for="Telefono">Telefono:</label> <input type="tel" pattern="[0-9]{10}" inputmode="numeric" placeholder="Numero"><br>
-            <button type="submit">Enviar</button>
-        </form>
+        <section class="info__formulario">
+            <div class="Direccion">
+                <h3>DIRECCION</h3>
+                <ul>fas</ul>
+            </div>
+            <div class="Telefono">  
+                <h3>TELEFONO</h3>
+                <ul>3515139059</ul>
+            </div>
+            <div class="Email">
+                <h3>EMAIL</h3>
+                <ul>fsafsa@hotmail.com</ul>
+            </div>
+        </section>
+        <section class="texto__contacto">
+            <h2>Mantener Contacto</h2>
+            <form id="form" action="./Formulario.html" method="post">
+                <label for="Nombre">Nombre:</label> <input type="text" name="Nombre" placeholder="Nombre">
+                <label for="Correo Electronico">Correo Electronico:</label> <input type="text" name="Email" placeholder="Email">
+                <label for="Telefono">Telefono:</label> <input type="tel" pattern="[0-9]{10}" inputmode="numeric" name="Telefono" placeholder="Numero">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer>
         <section class="Primera_Parte">
