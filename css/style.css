@@ -211,11 +211,12 @@ footer{
 
 .fondo_formulario{
     display: block;
-    max-width: 100%;
+    max-width: 75%;
     height: 500px;
     border-radius: 1%;
     box-shadow: 4px 4px 10px #202020;
-    margin: 1%;
+    margin: 2%;
+    
 }
 
 .Texto__Formulario{
@@ -307,6 +308,17 @@ form label{
     align-items: center;
 }
 
+@media(max-width :1200px){
+
+    .Texto__Formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+        padding: 5%;
+    }
+}
+
 @media(max-width :1400px){
     
     .info__formulario{
@@ -315,11 +327,11 @@ form label{
         gap: 200px;
         /* justify-content: center;
         text-align: center; */
-        padding: 10px;
+        padding: 8px;
     }
 
     .Parrafo__Formulario2{
-        font-size: 20px;
+        font-size: 18px;
         padding: 10px;
         width: 40%;
         align-items: center;
@@ -334,6 +346,10 @@ form label{
         align-items: center;
         font-size: 20px;
         padding: 5%;
+    }
+
+    .Parrafo__Formulario{
+        font-size: 15px;
     }
 
     .Parrafo__Formulario2{
@@ -389,7 +405,6 @@ form label{
 
 .contenedor_catalogo{
     display: flex;
-    width: 100%;
     padding-left: 10%;
     padding-top: 50px;
 }
