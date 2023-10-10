@@ -337,8 +337,6 @@ a{
     display: flex;
     flex-direction: row;
     gap: 400px;
-    /* justify-content: center;
-    text-align: center; */
     padding: 10px;
 }
 
@@ -353,17 +351,6 @@ a{
 .info__formulario ul{
     color: aliceblue;
 }
-
-
-/* form label{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    padding: 0.5rem 1rem;
-    width: 200px;
-    margin: 20px
-} */
 
 form{
     padding: 5%;
@@ -398,13 +385,13 @@ form label{
     margin: 20px
 }
 
-.texto__contacto{
+.informacion__contacto{
     display: flex;
     width: 80%;
     justify-content: space-around;
 }
 
-.texto__contacto h2{
+.informacion__contacto h2{
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -445,6 +432,8 @@ form label{
     }
 }
 
+/* media responsive contacto */
+
 @media (max-width: 800px){
     
     .texto__Formulario{
@@ -476,7 +465,7 @@ form label{
         padding: 10px;
     }
 
-    .texto__contacto{
+    .informacion__contacto{
         display: flex;
         width: 100%;
         flex-direction: column;
