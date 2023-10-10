@@ -1,3 +1,5 @@
+ /* general */
+ 
  *{
     margin: 0;
     padding: 0;
@@ -9,7 +11,9 @@ body {
     margin: 0;
 }
 
-header{
+/* header */
+
+.header{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -21,75 +25,98 @@ header{
     padding-top: 20px;
 }
 
- .toggle-menu{
+.header__links{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+/* Estilo de header__links */
+a{
+    text-decoration: 0;
+    color: aliceblue;
+}
+
+.toggle-menu{
     display: none;
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #313131;
+    margin-top: auto;
+}
+
+.footer__primera__parte{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding-inline: 10%;
+    color: aliceblue;
+}
+
+.footer__primera__parte h3{
+    text-align: center;
+    padding: 5px;
+    color: aliceblue;
+}
+
+.footer__segunda__parte{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding-inline: 10%;
+    color: aliceblue;
+}
+
+.footer__segunda__parte h3{
+    color: aliceblue;
+    text-align: center;
+    padding: 5px;
 } 
 
-main{
+/* main */
+
+.main{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     padding-bottom: 5%;
 }
 
-.links{
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
+/* index */
+
+.index__imagen__fondo{
+    border: none;
+    outline: none;
+    width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
-.texto{
+.index__texto{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
-.texto__Categoria{
+.titulo__index__texto{
     font-size: 30px;
     padding: 30px;
     color: aliceblue;
 }
-
-.categorias{
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-    /* justify-content: center;
-    text-align: center; */
-    padding: 10px;
-}
-
-.monitores img{
-    border-radius: 5%;
-    box-shadow: 4px 4px 10px #202020 
-}
-.perifericos img{
-    border-radius: 5%;
-    box-shadow: 4px 4px 10px #202020 
-}
-.hardware img{
-    border-radius: 5%;
-    box-shadow: 4px 4px 10px #202020 
-}
-
-
-.categorias h3{
-    text-align: center;
-    padding: 10px;
-    color: aliceblue;
-}
-
-.titulo1{
-    font-size: 30px;
-    padding: 30px;
-    color: aliceblue;
-}
-.parrafo1{
+.parrafo__index__texto{
     font-size: 20px;
     padding: 10px;
     color: aliceblue;
 }
+
 .texto__separado{
     padding: 5%;
     display: flex;
@@ -100,68 +127,54 @@ main{
     color: aliceblue;
 }
 
-.imagen__fondo{
-    border: none;
-    outline: none;
-    width: 100%;
-    display: block;
-    max-width: 100%;
-}
-a{
-    text-decoration: 0;
+.index__categoria{
+    font-size: 30px;
+    padding: 30px;
     color: aliceblue;
 }
 
-footer{
+.section__categorias{
     display: flex;
     flex-direction: row;
-    background-color: #313131;
-    margin-top: auto;
+    gap: 100px;
+    padding: 10px;
 }
 
-.primera_Parte{
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    padding-inline: 10%;
-    color: aliceblue;
-}
-
-.primera_Parte h3{
+.section__categorias h3{
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     color: aliceblue;
 }
 
-.segunda_Parte{
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    padding-inline: 10%;
-    color: aliceblue;
+.categoria__monitores img{
+    border-radius: 5%;
+    box-shadow: 4px 4px 10px #202020 
+}
+.categoria__perifericos img{
+    border-radius: 5%;
+    box-shadow: 4px 4px 10px #202020 
+}
+.categoria__hardware img{
+    border-radius: 5%;
+    box-shadow: 4px 4px 10px #202020 
 }
 
-.segunda_Parte h3{
-    color: aliceblue;
-    text-align: center;
-    padding: 5px;
-} 
+/* media responsive index */
 
 @media(max-width :1400px){
-    .categorias{
+    .section__categorias{
         display: flex;
         flex-direction: column;
     }
     .texto__separado{
         gap :150px;
+        text-align: center;
     }
 
 }
 
 @media (max-width: 800px){
-    header{
+    .header{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
@@ -172,7 +185,7 @@ footer{
         max-width: 100%;
     }
 
-    .links{
+    .header__links{
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -189,10 +202,102 @@ footer{
         flex-direction: column;
         gap: 30px;
     }
-    .titulo__formulario{
+    /* .titulo__formulario{
         font-size: 10px;
+    } */
+}
+
+/* Catalogo */
+
+.main__contenedor__catalogo{
+    display: flex;
+    padding-left: 10%;
+    padding-top: 50px;
+}
+
+
+.navProductos ul{
+    border: 2px solid aliceblue;
+    list-style: none;
+    padding: 20px;
+}
+
+.navProductos ul li{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.navProductos h3{
+    border: 2px solid aliceblue;
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding-left: 10%;
+}
+
+.tarjeta_producto{
+    padding: 15px;
+    width: 17%;
+    box-shadow: 0 0 7px #9999;
+    margin: 20px 20px 0 10px;
+}
+
+.producto{
+    max-width: 100%;
+    text-align: center;
+}
+
+.producto img{
+    margin: auto;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.body_producto{
+    display: flex;
+    flex-direction: column;
+    border-color: aliceblue;
+    height: 100%;
+    width: auto;
+}
+
+/* media responsive catalogo */
+
+@media (max-width: 1400px){
+    .tarjeta_producto{
+        padding: 15px;
+        width: 20%;
+        box-shadow: 0 0 7px #9999;
+        margin: 20px 20px 0 10px;
     }
 }
+
+@media (max-width: 800px){
+    .tarjeta_producto{
+        padding: 15px;
+        width: 25%;
+        box-shadow: 0 0 7px #9999;
+        margin: 20px 20px 0 10px;
+    }
+
+}
+
+@media (max-width: 600px){
+    .tarjeta_producto{
+        padding: 15px;
+        width: 50%;
+        box-shadow: 0 0 7px #9999;
+        margin: 20px 20px 0 10px;
+    }
+}
+
+/* Contacto */
+
 .parrafo__Formulario2{
     font-size: 25px;
     padding: 10px;
@@ -317,6 +422,7 @@ form label{
         font-size: 20px;
         padding: 5%;
     }
+
 }
 
 @media(max-width :1400px){
@@ -340,6 +446,7 @@ form label{
 }
 
 @media (max-width: 800px){
+    
     .texto__Formulario{
         display: flex;
         flex-direction: column;
@@ -403,85 +510,4 @@ form label{
     }
 }
 
-.contenedor_catalogo{
-    display: flex;
-    padding-left: 10%;
-    padding-top: 50px;
-}
 
-
-.navProductos ul{
-    border: 2px solid aliceblue;
-    list-style: none;
-    padding: 20px;
-}
-
-.navProductos ul li{
-    font-size: 20px;
-    padding: 5px;
-}
-
-.navProductos h3{
-    border: 2px solid aliceblue;
-    padding: 20px;
-}
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    padding-left: 10%;
-}
-
-.tarjeta_producto{
-    padding: 15px;
-    width: 17%;
-    box-shadow: 0 0 7px #9999;
-    margin: 20px 20px 0 10px;
-}
-
-.producto{
-    max-width: 100%;
-    text-align: center;
-}
-
-.producto img{
-    margin: auto;
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-
-.body_producto{
-    display: flex;
-    flex-direction: column;
-    border-color: aliceblue;
-    height: 100%;
-}
-
-@media (max-width: 1400px){
-    .tarjeta_producto{
-        padding: 15px;
-        width: 20%;
-        box-shadow: 0 0 7px #9999;
-        margin: 20px 20px 0 10px;
-    }
-}
-
-@media (max-width: 800px){
-    .tarjeta_producto{
-        padding: 15px;
-        width: 25%;
-        box-shadow: 0 0 7px #9999;
-        margin: 20px 20px 0 10px;
-    }
-}
-
-@media (max-width: 600px){
-    .tarjeta_producto{
-        padding: 15px;
-        width: 50%;
-        box-shadow: 0 0 7px #9999;
-        margin: 20px 20px 0 10px;
-    }
-}
