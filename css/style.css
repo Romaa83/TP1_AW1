@@ -305,6 +305,11 @@ a{
 
 /* Contacto */
 
+
+.parrafo__Formulario{
+    font-size: 20px;
+}
+
 .parrafo__Formulario2{
     font-size: 25px;
     padding: 10px;
