@@ -232,6 +232,11 @@ a{
     padding: 20px;
 }
 
+.navProductos h2{
+    padding-bottom: 50px;
+    font-size: 50px;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -258,12 +263,13 @@ a{
     width: 100%;
 }
 
-.body_producto{
+.body_producto h3, p{
     display: flex;
     flex-direction: column;
     border-color: aliceblue;
     height: 100%;
     width: auto;
+    font-size: 15px;
 }
 
 /* media responsive catalogo */
