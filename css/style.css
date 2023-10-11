@@ -270,6 +270,7 @@ a{
     height: 100%;
     width: auto;
     font-size: 15px;
+    color: aliceblue;
 }
 
 /* media responsive catalogo */
@@ -355,6 +356,10 @@ a{
 }
 
 .info__formulario ul{
+    color: aliceblue;
+}
+
+.informacion__contacto{
     color: aliceblue;
 }
 
