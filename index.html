@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./script.js"></script>
     <title>Inicio</title>
 </head>
 <body>
@@ -14,9 +15,12 @@
         </div> 
         <nav class="header__links" id="id_links">
             <li> <a href="index.html">INICIO</a></li>
-            <li> <a href="Catalogo.html">CATALOGO</a></li>
-            <li> <a href="Formulario.html">CONTACTO</a></li>
+            <li> <a href="catalogo.html">CATALOGO</a></li>
+            <li> <a href="formulario.html">CONTACTO</a></li>
         </nav>
+        <div class="header__carrito">
+            <img class="img-carrito" src="./imagenes/carrito-de-compras.png" alt="carrito" width="30" height="30">
+        </div>
     </header>
     <main class="main">
         <img class="index__imagen__fondo" src="./imagenes/home-slider-e.png" alt="FondoHome">
@@ -36,17 +40,17 @@
             <section class="section__categorias">
                 <div class="categoria__perifericos">
                     <h3>Perifericos</h3>
-                    <a href="./Catalogo.html"><img src="./imagenes/Perifericos.jpg" alt="Perifericos" width="400" height="300"></a>
+                    <a href="./catalogo.html"><img src="./imagenes/Perifericos.jpg" alt="Perifericos" data-categoria="periferico" width="400" height="300"></a>
                 </div>
                 <div class="categoria__hardware">
                     <h3>Hardware</h3>
-                    <a href="./Catalogo.html"><img src="./imagenes/hardware.jpg" alt="Hardware" width="400" height="300"></a>
+                    <a href="./catalogo.html"><img src="./imagenes/hardware.jpg" alt="Hardware" data-categoria="hardware" width="400" height="300"></a>
                 </div>
                 <div class="categoria__monitores">
                     <h3>Monitores</h3>
-                    <a href="./Catalogo.html"><img src="./imagenes/Monitores.jpg" alt="Monitores" width="400" height="300"></a>
+                    <a href="./catalogo.html"><img src="./imagenes/Monitores.jpg" alt="Monitores" data-categoria="monitores" width="400" height="300"></a>
                 </div>
-        </section>  
+            </section>  
     </main>
     <footer class="footer">
         <section class="footer__primera__parte">

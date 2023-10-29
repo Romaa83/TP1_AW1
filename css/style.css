@@ -4,11 +4,20 @@
     margin: 0;
     padding: 0;
 }
-body {
+html, body {
     background-color: #3b3b3b;
     width: 100%;
-    height: auto;
+    height:100%;
     margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
 }
 
 /* header */
@@ -29,6 +38,10 @@ body {
     display: flex;
     flex-direction: row;
     gap: 100px;
+}
+
+.header__carrito{
+    cursor: pointer;
 }
 
 /* Estilo de header__links */
@@ -227,6 +240,16 @@ a{
     padding: 5px;
 }
 
+.navProductos ul li button{
+    font-size: 20px;
+    font-weight: 550;
+    padding: 5px;
+    border: none;
+    border-width: 2px;
+    background: none;
+    cursor: pointer;
+}
+
 .navProductos h3{
     border: 2px solid aliceblue;
     padding: 20px;
@@ -270,6 +293,18 @@ a{
     height: 100%;
     width: auto;
     font-size: 15px;
+    color: aliceblue;
+}
+
+.carro button{
+    font-size: 20px;
+    font-weight: 550;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 10px;
+    background: #3b3b3b;
+    cursor: pointer;
     color: aliceblue;
 }
 
