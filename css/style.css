@@ -317,6 +317,17 @@ a{
         box-shadow: 0 0 7px #9999;
         margin: 20px 20px 0 10px;
     }
+    .carro button{
+        font-size: 15px;
+        font-weight: 400;
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 10px;
+        background: #3b3b3b;
+        cursor: pointer;
+        color: aliceblue;
+    }
 }
 
 @media (max-width: 800px){
@@ -325,6 +336,18 @@ a{
         width: 25%;
         box-shadow: 0 0 7px #9999;
         margin: 20px 20px 0 10px;
+    }
+
+    .carro button{
+        font-size: 15px;
+        font-weight: 350;
+        padding: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 10px;
+        background: #3b3b3b;
+        cursor: pointer;
+        color: aliceblue;
     }
 
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script defer src="./script.js"></script>
+    <script type="module" src="./principal.js"></script>
     <title>Catalogo</title>
 </head>
 <body>
@@ -41,9 +41,9 @@
                 </ul>
             </section>
             <section class="productos">
-                <div class="row">
-                    <div class="tarjeta_producto" data-categoria="periferico">
-                        <div class="producto">
+                <div class="row" id="row">
+                    <div class="tarjeta_producto" id="tarjeta_producto" data-categoria="periferico">
+                        <div class="producto" id="producto">
                             <img src="./imagenes/KUMARA.png" alt="Teclado Redragon">
                             <div class="body_producto">
                                 <h3>Regragon KUMARA</h3>
@@ -54,134 +54,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tarjeta_producto" data-categoria="periferico">
-                        <div class="producto">
-                            <img src="./imagenes/teclado logitech.png" alt="Teclado Logitech">
-                            <div class="body_producto">
-                                <h3>Teclado Logitech</h3>
-                                <p>$100.000</p>
-                            </div>
-                            <div class="carro">
-                                <button class="agregar-carrito">Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tarjeta_producto" data-categoria="periferico">
-                        <div class="producto">
-                            <img src="./imagenes/Hyperx Cloud 2.png" alt="HyperxC2">
-                            <div class="body_producto">
-                                <h3>Hyperx Cloud 2</h3>
-                                <p>$100.000</p>
-                            </div>
-                            <div class="carro">
-                                <button class="agregar-carrito">Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tarjeta_producto" data-categoria="periferico">
-                        <div class="producto">
-                            <img src="./imagenes/logitech g203.png" alt="Logitechg203">
-                            <div class="body_producto">
-                                <h3>Mouse Logitech G203</h3>
-                                <p>$100.000</p>
-                            </div>
-                            <div class="carro">
-                                <button class="agregar-carrito">Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tarjeta_producto" data-categoria="periferico">
-                        <div class="producto">
-                            <img src="./imagenes/superlight.png" alt="superlight">
-                            <div class="body_producto">
-                                <h3>Logitech SUPERLIGHT</h3>
-                                <p>$100.000</p>
-                            </div>
-                            <div class="carro">
-                                <button class="agregar-carrito">Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tarjeta_producto" data-categoria="hardware">
-                        <div class="producto">
-                            <img src="./imagenes/placa de video 1650gtx.png" alt="gtx1650">
-                            <div class="body_producto">
-                                <h3>MSI GTX 1650</h3>
-                                <p>$100.000</p>
-                            </div>
-                            <div class="carro">
-                                <button class="agregar-carrito">Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tarjeta_producto" data-categoria="hardware">
-                        <div class="producto">
-                            <img src="./imagenes/Placa de video rtx4070.png" alt="gtx1650">
-                            <div class="body_producto">
-                                <h3>RTX 4070</h3>
-                                <p>$100.000</p>
-                            </div>
-                            <div class="carro">
-                                <button class="agregar-carrito">Agregar</button>
-                            </div>
-                        </div>
-                    </div><div class="tarjeta_producto" data-categoria="hardware">
-                        <div class="producto">
-                            <img src="./imagenes/gtx 1030 msi.png" alt="gtx1650">
-                            <div class="body_producto">
-                                <h3>MSI GTX 1030</h3>
-                                <p>$100.000</p>
-                            </div>
-                            <div class="carro">
-                                <button class="agregar-carrito">Agregar</button>
-                            </div>
-                        </div>
-                    </div><div class="tarjeta_producto" data-categoria="monitores">
-                        <div class="producto">
-                            <img src="./imagenes/ViewSonic vx2458 144hz.png" alt="viewsonic">
-                            <div class="body_producto">
-                                <h3>ViewSonic VX2458 144hz</h3>
-                                <p>$100.000</p>
-                            </div>
-                            <div class="carro">
-                                <button class="agregar-carrito">Agregar</button>
-                            </div>
-                        </div>
-                    </div><div class="tarjeta_producto" data-categoria="monitores">
-                        <div class="producto">
-                            <img src="./imagenes/asus 165hz.png" alt="asus">
-                            <div class="body_producto">
-                                <h3>ASUS 165hz</h3>
-                                <p>$100.000</p>
-                            </div>
-                            <div class="carro">
-                                <button class="agregar-carrito">Agregar</button>
-                            </div>
-                        </div>
-                    </div><div class="tarjeta_producto" data-categoria="monitores">
-                        <div class="producto">
-                            <img src="./imagenes/gigabyte g27f 144hz.png" alt="g27f">
-                            <div class="body_producto">
-                                <h3>GIGABYTE G27F</h3>
-                                <p>$100.000</p>
-                            </div>
-                            <div class="carro">
-                                <button class="agregar-carrito">Agregar</button>
-                            </div>
-                        </div>
-                    </div><div class="tarjeta_producto" data-categoria="monitores">
-                        <div class="producto">
-                            <img src="./imagenes/ASUS TUF 165hz.png" alt="asustuf">
-                            <div class="body_producto">
-                                <h3>ASUS TUF 165hz</h3>
-                                <p>$100.000</p>
-                            </div>
-                            <div class="carro">
-                                <button class="agregar-carrito">Agregar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </section>
         </section>
     </main>
