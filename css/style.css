@@ -1,4 +1,4 @@
- /* general */
+ /* -------------------------------- general -------------------------------- */
  
  *{
     margin: 0;
@@ -20,7 +20,7 @@ main{
     flex-grow: 1;
 }
 
-/* header */
+/* -------------------------------- header -------------------------------- */
 
 .header{
     display: flex;
@@ -44,7 +44,7 @@ main{
     cursor: pointer;
 }
 
-/* Estilo de header__links */
+/* -------------------------------- Estilo de header__links -------------------------------- */
 a{
     text-decoration: 0;
     color: aliceblue;
@@ -54,7 +54,7 @@ a{
     display: none;
 }
 
-/* footer */
+/* -------------------------------- footer -------------------------------- */
 
 .footer{
     display: flex;
@@ -93,7 +93,7 @@ a{
     padding: 5px;
 } 
 
-/* main */
+/* -------------------------------- main -------------------------------- */
 
 .main{
     display: flex;
@@ -102,7 +102,7 @@ a{
     padding-bottom: 5%;
 }
 
-/* index */
+/* -------------------------------- index -------------------------------- */
 
 .index__imagen__fondo{
     border: none;
@@ -172,7 +172,7 @@ a{
     box-shadow: 4px 4px 10px #202020 
 }
 
-/* media responsive index */
+/* -------------------------------- media responsive index -------------------------------- */
 
 @media(max-width :1400px){
     .section__categorias{
@@ -220,7 +220,7 @@ a{
     } */
 }
 
-/* Catalogo */
+/* -------------------------------- Catalogo -------------------------------- */
 
 .main__contenedor__catalogo{
     display: flex;
@@ -308,7 +308,7 @@ a{
     color: aliceblue;
 }
 
-/* media responsive catalogo */
+/* -------------------------------- media responsive catalogo -------------------------------- */
 
 @media (max-width: 1400px){
     .tarjeta_producto{
@@ -361,7 +361,7 @@ a{
     }
 }
 
-/* Contacto */
+/* -------------------------------- Contacto -------------------------------- */
 
 
 .parrafo__Formulario{
@@ -506,7 +506,7 @@ form label{
     }
 }
 
-/* media responsive contacto */
+/* -------------------------------- media responsive contacto -------------------------------- */
 
 @media (max-width: 800px){
     

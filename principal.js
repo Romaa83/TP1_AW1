@@ -4,6 +4,8 @@ const contenedor = document.getElementById("row")
 
 let ContenidoHTML = ``;
 
+let resultado = "";
+
 tienda.articulos.forEach(elemento => {
     ContenidoHTML += `<div class="tarjeta_producto" id="tarjeta_producto" data-categoria="periferico">
     <div class="producto" id="producto">
@@ -19,4 +21,10 @@ tienda.articulos.forEach(elemento => {
 </div>`
 });
 
+
  contenedor.innerHTML = ContenidoHTML
+
+
+
+
+ 
