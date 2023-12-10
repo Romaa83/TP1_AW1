@@ -248,16 +248,19 @@ a{
     border-width: 2px;
     background: none;
     cursor: pointer;
+    color: aliceblue;
 }
 
 .navProductos h3{
     border: 2px solid aliceblue;
     padding: 20px;
+    color: aliceblue;
 }
 
 .navProductos h2{
     padding-bottom: 50px;
     font-size: 50px;
+    color: aliceblue;
 }
 
 .row{
@@ -416,10 +419,11 @@ a{
     justify-content: center;
     text-align: center;
     align-items: center;
+    color: aliceblue;
 }
 
 .info__formulario ul{
-    color: aliceblue;
+    color: antiquewhite;
 }
 
 .informacion__contacto{

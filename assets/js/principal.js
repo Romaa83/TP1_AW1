@@ -1,6 +1,6 @@
 import tienda from "./producto.js"
 
-const contenedor = document.getElementById("row")
+const contenedor = document.getElementById("fila-productos")
 
 let ContenidoHTML = ``;
 
