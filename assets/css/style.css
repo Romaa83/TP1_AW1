@@ -135,8 +135,6 @@ a{
     display: flex;
     flex-direction: row;
     gap: 300px;
-    /* text-align: center;
-    justify-content: center; */
     color: aliceblue;
 }
 
@@ -215,9 +213,6 @@ a{
         flex-direction: column;
         gap: 30px;
     }
-    /* .titulo__formulario{
-        font-size: 10px;
-    } */
 }
 
 /* -------------------------------- Catalogo -------------------------------- */
@@ -538,8 +533,6 @@ form label{
         display: flex;
         flex-direction: column;
         gap: 100px;
-        /* justify-content: center;
-        text-align: center; */
         padding: 10px;
     }
 
